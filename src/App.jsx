@@ -476,12 +476,12 @@ export default function App() {
           setActiveId(s.activeId||null);
           setAccountData(s.accountData||{});
         } else {
-          const def = { id:1, name:"My Account", handle:"@myaccount" };
+          const def = { id:1, name:"Davitte Taveras", handle:"@davittetaveras" };
           setAccounts([def]); setActiveId(1);
           setAccountData({ 1:{ recommended:DEFAULT_RECOMMENDED.map(v=>({...v})), subscriptions:[...DEFAULT_SUBSCRIPTIONS] } });
         }
       } catch {
-        const def = { id:1, name:"My Account", handle:"@myaccount" };
+        const def = { id:1, name:"Davitte Taveras", handle:"@davittetaveras" };
         setAccounts([def]); setActiveId(1);
         setAccountData({ 1:{ recommended:DEFAULT_RECOMMENDED.map(v=>({...v})), subscriptions:[...DEFAULT_SUBSCRIPTIONS] } });
       }
